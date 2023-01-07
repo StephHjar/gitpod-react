@@ -1,6 +1,6 @@
 import React from "react";
 
-class StatefulGreeting extends React.Component {
+class EventBinding extends React.Component {
 
     constructor(props) {
         super(props);
@@ -8,14 +8,23 @@ class StatefulGreeting extends React.Component {
             introduction: "Hello!",
             buttonText: "Exit",
         };
+        this.handleClick = this.handleClick.bind(this)
     }
 
-    handleClick() {
+    // handleClick() {
+    //     this.setState({
+    //         introduction: "Goodbye!",
+    //     });
+    //     console.log(this);
+    // }
+
+    handleClick = () => {
         this.setState({
             introduction: "Goodbye!",
         });
-        console.log(this.state.introduction);
+        console.log(this);
     }
+
 
     render() {
         return (
@@ -23,7 +32,9 @@ class StatefulGreeting extends React.Component {
                 <h1>
                     {this.state.introduction} {this.props.greeting}
                 </h1>
-                <button onClick={() => this.handleClick()}>
+                {/* <button onClick={() => this.handleClick()}> */}
+                {/* <button onClick={this.handleClick.bind(this)}> */}
+                <button onClick={this.handleClick}>
                     {this.state.buttonText}
                 </button>
             </div>
@@ -31,4 +42,4 @@ class StatefulGreeting extends React.Component {
     }
 }
 
-export default StatefulGreeting
+export default EventBinding

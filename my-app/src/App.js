@@ -4,14 +4,14 @@ import './App.css';
 // import StatefulGreeting from './components/StatefulGreeting';
 // import StatefulGreetingWithCallback from './components/StatefulGreetingWithCallback';
 // import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
-import EventsFunctional from './components/EventsFunctional';
-import EventsClass from './components/EventsClass';
+// import EventsFunctional from './components/EventsFunctional';
+// import EventsClass from './components/EventsClass';
+import EventBinding from './components/EventBinding';
 
 function App() {
   return (
     <div className="App">
-      <EventsFunctional />
-      <EventsClass />
+      <EventBinding />
     </div>
   );
 }
