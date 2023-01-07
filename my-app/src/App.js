@@ -6,12 +6,15 @@ import './App.css';
 // import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
 // import EventsFunctional from './components/EventsFunctional';
 // import EventsClass from './components/EventsClass';
-import EventBinding from './components/EventBinding';
+// import EventBinding from './components/EventBinding';
+import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 
 function App() {
   return (
     <div className="App">
-      <EventBinding />
+      <ConditionalRenderingClass />
+      <ConditionalRenderingFunctional connected={true} />
     </div>
   );
 }
