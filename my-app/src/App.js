@@ -7,14 +7,14 @@ import './App.css';
 // import EventsFunctional from './components/EventsFunctional';
 // import EventsClass from './components/EventsClass';
 // import EventBinding from './components/EventBinding';
-import ConditionalRenderingClass from './components/ConditionalRenderingClass';
-import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+// import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+// import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import NestingComponents from './components/NestingComponents';
 
 function App() {
   return (
     <div className="App">
-      <ConditionalRenderingClass />
-      <ConditionalRenderingFunctional connected={true} />
+      <NestingComponents />
     </div>
   );
 }
